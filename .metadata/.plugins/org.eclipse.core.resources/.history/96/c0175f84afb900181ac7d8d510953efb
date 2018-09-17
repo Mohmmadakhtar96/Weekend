@@ -1,0 +1,10 @@
+
+public class runner {
+	public static void main(String[] args) {
+		
+		String anotherPalindrome = "Niagara. O roar again!"; 
+		char aChar = anotherPalindrome.charAt(5);
+		return aChar;		
+	}
+
+}

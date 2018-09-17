@@ -1,0 +1,62 @@
+//import java.util.HashMap;
+
+public class table {
+
+	
+	public void Elements(String Name, String Element, boolean Alpha) {
+		
+	
+	name = name.toLowerCase();
+
+	ele = ele.toUpperCase();
+
+	if(alpha)
+
+	{
+		ele = alphaOrder(ele);
+	}
+
+	// checks for the input 
+	if(ele.length() > name.length() || ele.length() < 2)
+	{
+		System.out.println("Name: " + name + ", ele: " + ele + ", Found: False");
+
+		return false;
+		}
+	int first = name.indexOf(ele.charAt(0));
+
+	int seeled = name.lastIndexOf(ele.charAt(1));
+
+	if(first != -1 && seeled != -1)
+	{
+		if(seeled > first)
+		{
+			System.out.println("Name: " + name + ", ele: " + ele + ", -> True");
+
+			return true;
+		}
+	}
+	System.out.println("Name: " + name + ", ele: " + ele + ", -> False");
+
+	return false;
+		public String alphaOrder(String input)
+
+		{
+
+			if(input.length() < 2)
+
+				return input;
+
+			int i1 = input.charAt(0);
+
+			int i2 = input.charAt(1);
+
+			if(i2 < i1)
+			{
+			return input.substring(1) + input.substring(0,1);
+			}
+			return input;
+		}
+	}
+		
+	}

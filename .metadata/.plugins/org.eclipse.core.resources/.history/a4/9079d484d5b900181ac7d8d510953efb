@@ -1,0 +1,28 @@
+import java.util.HashMap;
+
+public class table {
+	
+	public String Elements(String Name ,String Element, Alpha boolean) {
+		
+	  	public String alphaOrder(String input)
+
+		{
+
+			if(input.length() < 2)
+
+				return input;
+
+			int c1 = input.charAt(0);
+
+			int c2 = input.charAt(1);
+
+			if(c2 < c1)
+			{
+			return input.substring(1) + input.substring(0,1);
+			}
+			return input;
+		}
+		
+		
+	}
+}

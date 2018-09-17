@@ -1,0 +1,100 @@
+import java.util.HashMap;
+
+public class table {
+	HashMap<String,String> elements = new HashMap<String,String>();
+
+	public boolean findElement(String name,String ele,boolean alpha)
+	{
+
+		name = name.toLowerCase();
+
+		ele = ele.toUpperCase();
+
+		if(alpha)
+
+		{
+			ele = alphaOrder(ele);
+		}
+
+		// checks for the input 
+		if(ele.length() > name.length() || ele.length() < 2)
+		{
+			System.out.println("Name: " + name + ", ele: " + ele + ", Found: False");
+
+			return false;
+			}
+		int first = name.indexOf(ele.charAt(0));
+
+		int seeled = name.lastIndexOf(ele.charAt(1));
+	
+		if(first != -1 && seeled != -1)
+		{
+			if(seeled > first)
+			{
+				System.out.println("Name: " + name + ", ele: " + ele + ", -> True");
+
+				return true;
+			}
+		}
+		System.out.println("Name: " + name + ", ele: " + ele + ", -> False");
+
+		return false;
+}
+  	public String alphaOrder(String input)
+
+	{
+
+		if(input.length() < 2)
+
+			return input;
+
+		int c1 = input.charAt(0);
+
+		int c2 = input.charAt(1);
+
+		if(c2 < c1)
+		{
+		return input.substring(1) + input.substring(0,1);
+		}
+		return input;
+	}
+  	
+//	public void FindElementOrder(String name)
+//	{
+//
+//		for(int i =0; i < name.length()-1; i++)
+//		{
+//			for(int j = 1; j < name.length(); j++)
+//			{
+//				if(i == j || j < i)
+//
+//					continue;
+//
+//				if(CheckHashMap(name.substring(i,i+1) + name.substring(j,j+1),name))
+//
+//					return;
+//
+//				//System.out.println(name.substring(i,i+1) + name.substring(j,j+1));
+//			}
+		
+		return;
+	}
+
+	public boolean CheckHashMap(String input,String name)
+	{
+
+		if(elements.get(input) == null)
+
+		{
+
+			System.out.println("ADDED " + input + ", " + name);
+
+			elements.put(input, name);
+
+			return true;
+
+		}
+
+		return false;
+	}
+}

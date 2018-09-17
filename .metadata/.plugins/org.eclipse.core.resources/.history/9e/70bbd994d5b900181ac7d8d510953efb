@@ -1,0 +1,59 @@
+//import java.util.HashMap;
+
+public class table {
+	private String Name;
+	private String Element;
+	private boolean Alpha;
+	
+	public String Elements(String Name ,String Element,boolean Alpha) {
+		this.Name = Name;
+		this.Element = Element;
+		this.Alpha = Alpha;
+	}
+		
+	  	
+
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getName() {
+		return Name;
+	}
+
+	public void setElement(String element) {
+		Element = element;
+	}
+
+	public String getElement() {
+		return Element;
+	}
+
+	public void setAlpha(boolean alpha) {
+		Alpha = alpha;
+	}
+	
+	public boolean isAlpha() {
+		return Alpha;
+	}
+
+		public String alphaOrder(String input)
+
+		{
+
+			if(input.length() < 2)
+
+				return input;
+
+			int c1 = input.charAt(0);
+
+			int c2 = input.charAt(1);
+
+			if(c2 < c1)
+			{
+			return input.substring(1) + input.substring(0,1);
+			}
+			return input;
+		}
+		
+		
+	}

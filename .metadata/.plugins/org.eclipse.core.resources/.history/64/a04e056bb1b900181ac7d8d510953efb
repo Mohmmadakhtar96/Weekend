@@ -1,0 +1,14 @@
+
+public class runner {
+	public static void main(String[] args) {
+		
+		String FirstElement = "Silver"; 
+		char aChar = anotherPalindrome.charAt(5);
+		char aChar2 = anotherPalindrome.charAt(6);
+
+		System.out.println(aChar);
+		System.out.println(aChar2);
+	}		
+			
+
+}

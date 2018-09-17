@@ -1,0 +1,34 @@
+
+public class runner {
+	public static void main(String[] args) {
+		
+//		String FirstElement = "Silver"; 
+//		char aChar = FirstElement.charAt(3);
+//		char aChar2 = FirstElement.charAt(4);
+//
+//		System.out.println(aChar);
+//		System.out.println(aChar2);
+//	}		
+
+		
+		table t = new table();
+
+		t.findElement("Sveggjerium","Ee",true);
+
+		t.findElement("Zockurijirium","Zr",false);
+
+		t.findElement("Jeffkanium","Kn",false);
+
+		t.findElement("Jefftzlon","Zt",false);
+
+		t.findElement("Jeffntzum","Nn",false);
+
+		t.findElement("Tuffjeffium","Ty",false);
+
+		
+
+		System.out.println("ALPHABETICAL ORDER");
+
+		//t.findElement(" Gozerium","ie",true);	
+	}
+}

@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class runner {
+	public static void main(String[] args) {
+		
+//		String FirstElement = "Silver"; 
+//		char aChar = FirstElement.charAt(3);
+//		char aChar2 = FirstElement.charAt(4);
+//
+//		System.out.println(aChar);
+//		System.out.println(aChar2);
+//	}		
+//		String element = "HEllo";
+//		String sub1 = element.substring(0,3);
+//		
+//		System.out.println(element);
+//		System.out.println(sub1);
+//	}
+//}
+				
+
+				boolean run=true;
+
+				
+
+				while (run)
+
+				{
+
+					Scanner s = new Scanner(System.in);
+
+					System.out.println("Please put in your element");
+
+					String name = s.nextLine();
+
+					
+
+					if (name.equals("exit"))
+
+					{
+
+						run=false;
+
+						Rules.elements.forEach((key, value) -> System.out.println("Symbol " + key + " , Element name " + value));
+
+						break;
+
+					}
+
+					Rules.symbols(name);
+
+					
+				}
+	}
+				}
+		

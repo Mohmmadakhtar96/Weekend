@@ -1,0 +1,26 @@
+//import java.util.HashMap;
+
+public class table {
+
+	
+	public boolean Elements(String Name, String Element) {
+
+	
+	// String sub1 =  Name.substring(0, 11);
+	// String sub2 = Element.substring(0, 3);
+	 if(!(Element.length() == 2)) {
+	 return true;
+	 
+	 else if {
+		 return false;
+	 }
+	 else if (Element.contains(inputname)){
+		 return true;
+	 }
+		 else {
+			 return false;
+		 }
+	 }
+	}
+	}
+	

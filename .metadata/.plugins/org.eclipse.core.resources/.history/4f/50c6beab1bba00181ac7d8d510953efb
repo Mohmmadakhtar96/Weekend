@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+//import java.util.HashMap;
+
+public class table {
+	
+	String name;
+	String symbol;
+
+	
+	public boolean Elements(String Name, String Element) {
+		return false;
+	
+	
+	// String sub1 =  Name.substring(0, 11);
+	// String sub2 = Element.substring(0, 3);
+	}
+	
+	public boolean scan() {
+		
+		boolean test = true;
+		
+		 Scanner s = new Scanner(System.in);
+
+			System.out.println("Please Enter Element Name");
+
+			String name = s.nextLine();
+			this.name = name;
+			System.out.println("Please Enter Element Symbol");
+			String symbol = s.nextLine();
+			this.symbol = symbol;
+			
+			if(name.length() != 2) {
+				
+				test = true;
+			}
+			else if(name.contains(symbol)) {
+					
+				test = false;
+				
+			}
+			
+			
+			return test;
+			
+			
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+
+	
+	}
